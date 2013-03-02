@@ -7,14 +7,22 @@ body {
     background-image: none;
 }
 
-table tr td{
+table {
+    width: 100%;
+    table-layout: fixed;
     border: 1px solid black;
     border-collapse: collapse;
 }
 
 td {
-    height: 50px;
-    width: 50px;    
+    height: 70px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
 
 input[type=submit] {
