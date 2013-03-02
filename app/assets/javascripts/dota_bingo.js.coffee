@@ -5,4 +5,6 @@
 $(document).ready ->
   $('form').submit (event) ->
     event.preventDefault()
-    # CHANGE SUBMIT BUTTON CLASS HERE
+    form = $(event.target).closest('form')
+    console.dir form
+    $("input[type='submit']",form).removeClass("not_selected").addClass("selected");
