@@ -1,0 +1,13 @@
+<h1>DotaBingo#index</h1>
+<p>Find me in app/views/dota_bingo/index.html.erb</p>
+<% id=0 %>
+<table border="1" width="200px">
+	<% (0..4).each do |x| %>
+		<tr>
+		<% (0..4).each do |y| %>
+			<td><form action="/dota_bingo/toggle" method="post"><input name="x_val" type="hidden" value="<%= x %>" /><input name="y_val" type="hidden" value="<%= y %>" /><input type=submit id="test" value="<%= @board.get_tile_at_coord(id)%> - <%= @board.get_tile_at_coord(id).get_tile_value()%> - <%= id %>" /></form></td>
+			<% id += 1 %>
+		<% end %>
+		<tr>
+	<% end %>
+</table>

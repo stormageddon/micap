@@ -1,0 +1,11 @@
+<h1>DotaBingo#update</h1>
+<p>Find me in app/views/dota_bingo/update.html.erb</p>
+<table border="1" width="200px">
+	<% (0..4).each do |x| %>
+		<tr>
+		<% (0..4).each do |y| %>
+			<td><form action="/dota_bingo/toggle" method="post"><input name="x_val" type="hidden" value="<%= x %>" /><input name="y_val" type="hidden" value="<%= y %>" /><input type=submit id="test" value="<%= @board.get_tile_at_coord([x,y])%>" /></form></td>
+		<% end %>
+		<tr>
+	<% end %>
+</table>

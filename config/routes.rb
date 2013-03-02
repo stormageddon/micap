@@ -1,4 +1,7 @@
 Blog::Application.routes.draw do
+  get "dota_bingo/index"
+  post "dota_bingo/toggle"
+
   #get "home/index"
 
   # The priority is based upon order of creation:
