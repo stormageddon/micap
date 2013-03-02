@@ -18,8 +18,9 @@ td {
 }
 
 input[type=submit] {
-    width: 20em;
+    -webkit-appearance: button;
     height: 5em;
+    padding: 0px;
 }
 
 p {
