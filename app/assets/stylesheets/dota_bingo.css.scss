@@ -25,10 +25,18 @@ tr {
     border-collapse: collapse;
 }
 
-input[type=submit] {
+input.not_selected {
     -webkit-appearance: button;
     height: 5em;
     padding: 0px;
+}
+
+
+input.selected {
+    -webkit-appearance: button;
+    height: 5em;
+    padding: 0px;
+    background-color:blue;
 }
 
 p {

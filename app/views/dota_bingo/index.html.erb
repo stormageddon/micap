@@ -8,7 +8,7 @@
 			  <form action="/dota_bingo/toggle" method="post">
 			    <input name="x_val" type="hidden" value="<%= x %>" />
 			    <input name="y_val" type="hidden" value="<%= y %>" />
-			    <input type="submit" id="test" class="Bingo" value="<%= @board.get_tile_at_coord([x,y]).get_tile_value()%>" />
+			    <input type="submit" id="test" class="not_selected" value="<%= @board.get_tile_at_coord([x,y]).get_tile_value()%>" />
 			</form>
 			</td>
 		<% end %>
