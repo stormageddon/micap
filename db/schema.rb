@@ -13,10 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20130302192414) do
 
-  create_table "Users", :id => false, :force => true do |t|
-    t.text "username"
-  end
-
   create_table "boards", :force => true do |t|
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
